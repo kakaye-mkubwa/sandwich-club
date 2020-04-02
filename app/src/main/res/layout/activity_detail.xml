@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.udacity.sandwichclub.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/image_cardview">
+
+                <ImageView
+                    android:id="@+id/image_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/sandwich_picture_content_description"
+                    android:scaleType="centerCrop" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="3dp"
+                android:padding="5dp"
+                android:layout_below="@+id/image_cardview">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:id="@+id/origin_label_tv"
+                        android:text="@string/detail_place_of_origin_label"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:typeface="sans"/>
+                    <TextView
+                        android:id="@+id/origin_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:typeface="sans"
+                        android:textSize="17sp"
+                        android:layout_toRightOf="@+id/origin_label_tv"
+                        android:layout_toEndOf="@+id/origin_label_tv"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/also_known_as_label_tv"
+                        android:text="@string/detail_also_known_as_label"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:typeface="sans"
+                        android:layout_below="@+id/origin_tv"
+                        android:layout_alignStart="@+id/origin_label_tv"
+                        android:layout_alignLeft="@+id/origin_label_tv"
+                        android:layout_toLeftOf="@+id/also_known_tv"
+                        android:layout_toStartOf="@+id/also_known_tv"/>
+                    <TextView
+                        android:id="@+id/also_known_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:typeface="sans"
+                        android:textSize="17sp"
+                        android:layout_alignLeft="@+id/origin_tv"
+                        android:layout_alignStart="@+id/origin_tv"
+                        android:layout_below="@+id/origin_tv"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ingredients_label_tv"
+                        android:text="@string/detail_ingredients_label"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:typeface="sans"
+                        android:layout_below="@+id/also_known_tv"
+                        android:layout_toLeftOf="@+id/ingredients_tv"
+                        android:layout_toStartOf="@+id/ingredients_tv"
+                        android:layout_alignStart="@+id/origin_label_tv"
+                        android:layout_alignLeft="@+id/origin_label_tv"/>
+                    <TextView
+                        android:id="@+id/ingredients_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:typeface="sans"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/also_known_tv"
+                        android:layout_alignStart="@+id/also_known_tv"
+                        android:layout_alignLeft="@+id/also_known_tv"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detail_description_label"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:typeface="sans"
+                        android:layout_below="@+id/ingredients_tv"
+                        android:layout_alignLeft="@+id/origin_label_tv"
+                        android:layout_alignStart="@+id/origin_label_tv"
+                        android:layout_toLeftOf="@+id/description_tv"
+                        android:layout_toStartOf="@+id/description_tv"/>
+                    <TextView
+                        android:id="@+id/description_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:typeface="sans"
+                        android:textSize="17sp"
+                        android:layout_alignLeft="@+id/ingredients_tv"
+                        android:layout_alignStart="@+id/ingredients_tv"
+                        android:layout_below="@+id/ingredients_tv"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>
