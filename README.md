@@ -14,5 +14,5 @@ This starter code was downloaded from [Sandwich Club app starter code.](https://
 and consequentially designed the layout for the detail activity so that the different elements
 display in a sensible way.
 
-file:///home/m3n/Downloads/Udacity%20Android/sandwich-club-starter-code-master/screenshots/photo5778411960696680723.jpg
-file:///home/m3n/Downloads/Udacity%20Android/sandwich-club-starter-code-master/screenshots/details%20screenshot.jpg
+https://github.com/kakaye-mkubwa/sandwich-club/blob/master/screenshots/details%20screenshot.jpg
+https://github.com/kakaye-mkubwa/sandwich-club/blob/master/screenshots/sandwich%20list.jpg
