@@ -14,5 +14,5 @@ This starter code was downloaded from [Sandwich Club app starter code.](https://
 and consequentially designed the layout for the detail activity so that the different elements
 display in a sensible way.
 
-![alt](https://github.com/kakaye-mkubwa/sandwich-club/blob/master/screenshots/details%20screenshot.jpg =100x20)
+![alt](https://github.com/kakaye-mkubwa/sandwich-club/blob/master/screenshots/details%20screenshot.jpg =100*20)
 ![alt](https://github.com/kakaye-mkubwa/sandwich-club/blob/master/screenshots/sandwich%20list.jpg)
